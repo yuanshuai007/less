@@ -1,0 +1,32 @@
+/*
+** ~"内容"  将内容原样输出
+** 可以做变量和字符串拼接   ~"@{var}string"
+*/
+
+@min768: (min-width: 768px);
+@num: 15;
+p{
+  color:~"green";
+	font-size:~"@{num}px"
+}
+
+@media @min768{
+  div{
+	  color:red;
+	}
+}
+
+
+
+/*
+p {
+  color: green;
+  font-size: 15px;
+}
+@media (min-width: 768px) {
+  div {
+    color: red;
+  }
+}
+
+*/

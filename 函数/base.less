@@ -1,0 +1,33 @@
+/*
+** 函数名是一个class选择器
+** .fn-name(@arg){属性:值}  必须在类里面执行
+** .fn-name(@arg){类}  可以定格执行
+** 
+*/
+.fn-a(@arg){
+	font-size:@arg;
+}
+.a{
+  .fn-a(12px);
+}
+
+
+//可以定格执行的函数  注意.fn(); 要加;
+//只要不是{}结尾，都要加;
+.fn(){
+  .b {
+	  font-size:12px;
+	}
+}
+.fn();
+
+
+/*
+.a {
+  font-size: 12px;
+}
+.b {
+  font-size: 12px;
+}
+
+*/
